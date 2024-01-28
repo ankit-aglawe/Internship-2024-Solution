@@ -20,8 +20,13 @@ This repository contains my submission for the 2024 Internship Coding Challenge.
 ### Clustering Algorithms 🧮
 
 1. **K-Means**: Determination of the optimal number of clusters using the elbow method.
-2. **DBSCAN**: Density-based spatial clustering of applications with noise.
-3. **HDBSCAN**: Hierarchical density-based clustering.
+   ![plot](./plots/kmeans-pca-plot.png)
+   
+3. **DBSCAN**: Density-based spatial clustering of applications with noise.
+   ![plot](./plots/dbscan-pca-plot.png)
+   
+5. **HDBSCAN**: Hierarchical density-based clustering.
+   ![plot](./plots/hdbscan-pca-plot.png)
 
 Each algorithm is briefly described and utilized to find patterns within the data.
 
@@ -48,7 +53,22 @@ Each algorithm is briefly described and utilized to find patterns within the dat
 - **Predictive Modeling**: Utilize clusters as features in predictive models to assess their contribution to model performance.
 - **Scalability and Efficiency**: Address the scalability of algorithms for larger datasets and improve computational efficiency.
 
+
 ### Running the Notebook 🏃‍♀️
 
-Please refer to the `readme.txt` file for detailed instructions on running the Jupyter notebook and visualizing the results with Plotly.
+To run the Jupyter notebook and visualize the results with Plotly, load the dataset using the following command within the notebook by add ading dataset path:
 
+```python
+dataset = pd.read_parquet("/content/drive/MyDrive/dataset.parquet")
+```
+
+Please ensure the dataset file path is correct and accessible.
+
+### References 📚
+
+- *Saji, B. (2024) Elbow method for finding the optimal number of clusters in K-means, Analytics Vidhya. Available at: https://www.analyticsvidhya.com/blog/2021/01/in-depth-intuition-of-k-means-clustering-algorithm-in-machine-learning/#:~:text=The%20elbow%20method%20is%20a%20technique%20used%20in%20clustering%20analysis,WCSS%20starts%20to%20level%20off. (Accessed: 28 January 2024).*
+- *Dorji, N. (2018) DBSCAN: Density-based Clustering Essentials, Datanovia. Available at: https://www.datanovia.com/en/lessons/dbscan-density-based-clustering-essentials/ (Accessed: 28 January 2024).* 
+- *Sklearn.cluster.HDBSCAN (no date) scikit. Available at: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.HDBSCAN.html (Accessed: 28 January 2024).*
+- *St&ouml;ckl, A. (2021) Clustering the 20 newsgroups dataset with GPT3 embeddings, Medium. Available at: https://towardsdatascience.com/clustering-the-20-newsgroups-dataset-with-gpt3-embeddings-10411a9ad150 (Accessed: 28 January 2024).*
+- *Ghantasala, P., Nayani, S.S. and Lita Doolan MRSB AMBCS Oxford Biologist Harvard Educated AI Technician (2023) How do you optimize clustering models?, How to Optimize Your Clustering Models for Data Analysis. Available at: https://www.linkedin.com/advice/3/how-do-you-optimize-clustering-models-skills-data-analysis (Accessed: 28 January 2024).*
+- *Plotly (no date) Plotly/plotly.py: The Interactive Graphing Library for Python this project now includes Plotly Express!, GitHub. Available at: https://github.com/plotly/plotly.py (Accessed: 28 January 2024).*
