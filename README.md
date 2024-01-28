@@ -20,9 +20,13 @@ This repository contains my submission for the 2024 Internship Coding Challenge.
 ### Clustering Algorithms 🧮
 
 1. **K-Means**: Determination of the optimal number of clusters using the elbow method.
-   ![plot](./plot/kmeans-pca-plot.png)
+   ![plot](./plots/kmeans-pca-plot.png)
+   
 3. **DBSCAN**: Density-based spatial clustering of applications with noise.
-4. **HDBSCAN**: Hierarchical density-based clustering.
+   ![plot](./plots/dbscan-pca-plot.png)
+   
+5. **HDBSCAN**: Hierarchical density-based clustering.
+   ![plot](./plots/hdbscan-pca-plot.png)
 
 Each algorithm is briefly described and utilized to find patterns within the data.
 
